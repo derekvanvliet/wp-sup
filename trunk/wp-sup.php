@@ -55,4 +55,36 @@ function wpsup_publish() {
 }
 
 add_action('publish_post', 'wpsup_publish');
+
+function wpsup_atom_head() {
+	$supid = wpsup_get_supid();
+	$link = '<link rel="http://api.friendfeed.com/2008/03#sup" type="application/json" href="http://friendfeed.com/api/public-sup.json#' . $supid . '"/>';
+	echo $link;
+}
+
+add_action('atom_head', 'wpsup_atom_head');
+
+function wpsup_rdf_head() {
+	$supid = wpsup_get_supid();
+	$link = '<link rel="http://api.friendfeed.com/2008/03#sup" xmlns="http://www.w3.org/2005/Atom" type="application/json" href="http://friendfeed.com/api/public-sup.json#' . $supid . '"/>';
+	echo $link;
+}
+
+add_action('rdf_header', 'wpsup_rdf_head');
+
+function wpsup_rss_head() {
+	$supid = wpsup_get_supid();
+	$link = '<link rel="http://api.friendfeed.com/2008/03#sup" xmlns="http://www.w3.org/2005/Atom" type="application/json" href="http://friendfeed.com/api/public-sup.json#' . $supid . '"/>';
+	echo $link;
+}
+
+add_action('rss_head', 'wpsup_rss_head');
+
+function wpsup_rss2_head() {
+	$supid = wpsup_get_supid();
+	$link = '<link rel="http://api.friendfeed.com/2008/03#sup" xmlns="http://www.w3.org/2005/Atom" type="application/json" href="http://friendfeed.com/api/public-sup.json#' . $supid . '"/>';
+	echo $link;
+}
+
+add_action('rss2_head', 'wpsup_rss2_head');
 ?>
