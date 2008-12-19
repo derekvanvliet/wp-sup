@@ -4,7 +4,7 @@ Plugin Name: WP SUP
 Plugin URI: http://neothoughts.com/wp-sup/
 Description: A SUP (Simple Update Protocol) plugin for WordPress. It adds the SUP-ID HTTP header to your site's feed and pings FriendFeed's public SUP feed.
 Author: Derek van Vliet
-Version: 1.0
+Version: 1.1
 Author URI: http://neothoughts.com/
 
 Copyright 2008 Derek van Vliet (email : derek@neothoughts.com)
