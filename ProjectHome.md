@@ -1,0 +1,1 @@
+A SUP (Simple Update Protocol) plugin for WordPress. It adds a SUP-ID HTTP header to your site's feed and pings FriendFeed's public SUP feed.
